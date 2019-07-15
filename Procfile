@@ -1,1 +1,1 @@
-web: gunicorn sensai:app
+web: gunicorn kondate:app
