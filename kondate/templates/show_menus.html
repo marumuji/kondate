@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <div class = "buttonarea">
+    <a href="/get" class="btn">ガチャを回す</a>
+  </div>
+
+  <div class="result">
+ 
+  <div class="box menu">
+    <h3>主菜</h3>
+    <h2>{{main.name}}</h2>
+  </div>
+  <div class="box menu">
+    <h3>副菜</h3>
+      <h2>{{sub.name}}</h2>
+  </div>
+  <div class="box menu">
+    <h3>汁物</h3>
+      <h2>{{soup.name}}</h2>
+  </div>
+
+{% endblock %}
