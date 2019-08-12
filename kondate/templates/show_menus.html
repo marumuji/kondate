@@ -9,15 +9,18 @@
     {% if main and sub and soup %}
       <div class="box menu">
         <h3>主菜</h3>
-          <h2>{{main.name}}</h2>
+          <h2>{{main}}</h2>
+          <a href="/main?sub={{sub}}&soup={{soup}}" class="child-btn">メニュー変更</a>
       </div>
       <div class="box menu">
         <h3>副菜</h3>
-          <h2>{{sub.name}}</h2>
+          <h2>{{sub}}</h2>
+          <a href="/sub?main={{main}}&soup={{soup}}" class="child-btn">メニュー変更</a>
       </div>
       <div class="box menu">
         <h3>汁物</h3>
-          <h2>{{soup.name}}</h2>
+          <h2>{{soup}}</h2>
+          <a href="/soup?main={{main}}&sub={{sub}}" class="child-btn">メニュー変更</a>
       </div>
     {% endif %}
   </div>
